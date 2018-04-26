@@ -8,10 +8,6 @@ import owl from '../../assets/owl_mascot.png'
 import unicorn from '../../assets/unicorn_mascot.png'
 
 class Footer extends React.Component {
-  constructor(props, context) {
-    super(props, context)
-  }
-
   render() {
     return (
       <Flex
