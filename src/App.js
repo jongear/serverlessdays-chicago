@@ -36,13 +36,13 @@ class App extends Component {
                 }}
               />
               <Flex>
-                <h2>October 19th, Location TBD</h2>
+                <h2>October 12th, Location TBD</h2>
               </Flex>
               <Flex>Jun 01 2018 - Call for Papers opens</Flex>
               <Flex>Jun 30 2018 - Tickets go on sale</Flex>
               <Flex>Sep 18 2018 - CFP closes</Flex>
               <Flex>Sep 21 2018 - Final speaker announcement</Flex>
-              <Flex>Oct 19 2018 - ServerlessDays Chicago</Flex>
+              <Flex>Oct 12 2018 - ServerlessDays Chicago</Flex>
             </Box>
           </Flex>
         </Flex>
