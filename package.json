@@ -1,7 +1,30 @@
 {
   "name": "serverlessdays-chicago",
   "version": "0.1.0",
-  "private": true,
+  "description": "The marketing site for ServerlessDays Chicago",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jongear/serverlessdays-chicago.git"
+  },
+  "keywords": [
+    "serverless",
+    "serverlessdays",
+    "chicago",
+    "jeffcon"
+  ],
+  "license": "MIT",
+  "author": "Jon Gear <askjon@jongear.io>",
+  "bugs": {
+    "url": "https://github.com/jongear/serverlessdays-chicago/issues"
+  },
+  "homepage": "https://github.com/jongear/serverlessdays-chicago#readme",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint ."
+  },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-brands": "^5.0.10",
@@ -15,13 +38,6 @@
     "rebass": "^2.0.0-0",
     "styled-components": "^3.2.6",
     "styled-theming": "^2.2.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "lint": "eslint ."
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
