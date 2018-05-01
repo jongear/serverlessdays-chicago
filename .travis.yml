@@ -1,0 +1,36 @@
+language: python
+python:
+  - '2.7'
+
+sudo: required
+cache:
+  pip: true
+  directories:
+    - node_modules
+
+notifications:
+  email: true
+
+install:
+  - npm install
+  - pip install awscli
+
+script:
+  - npm run build
+
+deploy:
+  - provider: s3
+    skip_cleanup: true
+    local_dir: dist
+    access-key-id:
+      secure: "$AWS_ACCESS_KEY_ID"
+    secret-access-key:
+      secure: "$AWS_SECRET_ACCESS_KEY"
+    bucket: "$AWS_BUCKET"
+    on:
+      branch: master
+
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id $AWS_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+ 
